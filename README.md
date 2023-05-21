@@ -39,9 +39,10 @@ For detailed descriptions please see original papers:
     * `metadata.tsv` - metadata for every sample: dataset and immunotherapy status
 * `results/` - folder with feature importances
     * `*_importances.csv`, where '*' refers to feature type.
-    * `intersection.xlsx` - table with intersection of MAGs and MPA top 70 important features. 
+    * `intersection.xlsx` - table with intersection of MAGs and MPA top 70 important features.
 
     These tables contain importances from models trained on the all 7 batch-corrected datasets for every feature, e.g. corrected on 7 reference batches, and also mean importance, which were used in further analysis. MAGs importances is anotated with taxonomy. 
+* `pictures` - pictures generated with the notebook listed below. Used for `README.md`
 * `BE_correction_R` - the R script used for BE-correction with ConQuR. In order to use it, one should change 3 path variables in the begining of the script. For more information please visit ConQuR repository: https://github.com/wdl2459/ConQuR
 * `Melanoma_ML_notebook.ipynb` - the jupyter notebok with the main ML pipeline. With this notebook one can generate all tables from `results/` and plots from `README`. Code is meant to be properly annotated, so please feel free to examine it.
 ***
