@@ -39,6 +39,8 @@ For detailed descriptions please see original papers:
     * `metadata.tsv` - metadata for every sample: dataset and immunotherapy status
 * `results/` - folder with feature importances
     * `*_importances.csv`, where '*' refers to feature type.
+    * `intersection.xlsx` - table with intersection of MAGs and MPA top 70 important features. 
+
     These tables contain importances from models trained on the all 7 batch-corrected datasets for every feature, e.g. corrected on 7 reference batches, and also mean importance, which were used in further analysis. MAGs importances is anotated with taxonomy. 
 * `BE_correction_R` - the R script used for BE-correction with ConQuR. In order to use it, one should change 3 path variables in the begining of the script. For more information please visit ConQuR repository: https://github.com/wdl2459/ConQuR
 * `Melanoma_ML_notebook.ipynb` - the jupyter notebok with the main ML pipeline. With this notebook one can generate all tables from `results/` and plots from `README`. Code is meant to be properly annotated, so please feel free to examine it.
@@ -53,7 +55,7 @@ Batch correction was performed with `ConQuR` package for **R 4.3.0**.
 RFC model was trained with `sklearn` package with **python 3.9**. Another python packages used in research are named in `requirements.txt`. 
 
 Overall pipline is:
-
+1. 
 1. Batch effect correction with ConQuR
 2. Model validation with corrected and uncorrected data 
 3. Extraction of the importances from the models trained on batch-corrected data
@@ -94,4 +96,47 @@ MAGs:
 
 Resulting tables are available in current repository in the `results/` folder.
 
-**
+### Feature annotation and intersection
+
+KEGG Orrhology annotation was not quite resultative: we are failed to link the most important KOs to any pathways important in cancer pathology.
+
+![](pictures/pie.jpg)
+
+However, reasonable result was obtained with comparsion of top 70 important MAGs and MetaPhlAn features: 29 of them was common bacteria (listed below). More details are in the table named `intersection.xlsx` in the `results/` folder.
+
+1. Akkermansia muciniphila
+2. Alistipes finegoldii
+3. Alistipes indistinctus
+4. Alistipes putredinis
+5. Alistipes shahii
+6. Bacteroides caccae
+7. Bacteroides cellulosilyticus
+8. Bacteroides ovatus
+9. Bacteroides stercoris
+10. Bacteroides thetaiotaomicron
+11. Bacteroides uniformis
+12. Bacteroides xylanisolvens
+13. Barnesiella intestinihominis
+14. Bifidobacterium longum
+15. Blautia obeum
+16. Blautia wexlerae
+17. Dorea longicatena
+18. Escherichia coli
+19. Faecalibacterium prausnitzii
+20. Flavonifractor plautii
+21. Fusicatenibacter saccharivorans
+22. Gemmiger formicilis
+23. Odoribacter splanchnicus
+24. Parabacteroides distasonis
+25. Parabacteroides merdae
+26. Roseburia intestinalis
+27. Roseburia inulinivorans
+28. Ruminococcus bromii
+29. Ruthenibacterium lactatiformans
+
+
+![](pictures/intersect.png)
+
+# Conclusion
+...
+
