@@ -56,10 +56,12 @@ Batch correction was performed with `ConQuR` package for **R 4.3.0**.
 RFC model was trained with `sklearn` package with **python 3.9**. Another python packages used in research are named in `requirements.txt`. 
 
 Overall pipline is:
-1. 
-1. Batch effect correction with ConQuR
-2. Model validation with corrected and uncorrected data 
-3. Extraction of the importances from the models trained on batch-corrected data
+
+1. Generate tables with feature frequencies - with **MetaPhlAn**, **MAGs** and **KEGG Ortology**
+2. Batch effect correction with ConQuR
+4. RFC model validation with corrected and uncorrected data 
+5. Extraction of the importances from the models trained on batch-corrected data
+6. Analysis of the most important features
 
 # Results
 ### Model validation
