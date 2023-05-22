@@ -5,6 +5,20 @@ _prediction of the immunotherapy status of the patients with melanoma using thei
 
 **Supervisor:** Evgenii Olekhnovich
 ***
+# Introduction
+Immunotherapy aimed to boost natural defences to eliminate malignant cells is a breakthrough for cancer treatment and has revolutionized the field of oncology.  Therapeutic strategies like cell transfer and immune checkpoint inhibitors (ICIs) have been demonstrated highly effective against various types of cancer (including melanoma, renal cell carcinoma, lung cancer, and (Hodi et al. 2010; Motzer et al. 2015; Littman 2015; Emens et al. 2021; Gandhi et al. 2018; Forde et al. 2018). However, it shows varying response rates among cancer (Li et al. 2020; Thompson et al. 2022) and a considerable number of patients are not sensitive to immunotherapy, but the underlying mechanisms remain (Wei, Duffy, and Allison 2018).
+
+Identification of individual patients susceptible or resistant to immunotherapy is a crucial point in improving response rates to cancer therapy and patient survival.
+
+In recent years, the intestinal microbiota has been shown to significantly affect the immunotherapy of malignant tumors (Snyder, Pamer, and Wolchok 2015; Schluter et al. 2020; Swami, Zakharia, and Zhang 2018; Strouse, Mangalam, and Zhang 2019; Chau and Zhang 2021), which can be considered as a basis for the development of robust predictive tools for the identification of immunotherapy-sensitive patients. 
+
+Moreover, several studies have demonstrated that gut microbiota modulation let enhance Immunotherapy response.  For example, the efficacy of anti-CTLA-4 therapy was strongly positively associated with intestinal Bacteroides thetaiotaomicron and Bacteroides fragilis (Vétizou et al. 2015); oral intake of Bifidobacterium under anti–PD-L1 antibody therapy of melanoma significantly improves clinical response in mouse models (Sivan et al. 2015). Bifidobacterium was also effective to suppress lung cancer metastasis (Zhu et al. 2020) and reducing Immune-Related Adverse Events in lung cancer ICIs therapy (Chau et al. 2021). 
+
+Thus Identification of microbial signatures associated with positive therapy response will allow us to propose novel promising candidates for enhancing melanoma immunotherapy.
+
+Here we developed Machine learning-based predictive models utilizing gut metagenomic data to identify clinical response status in melanoma immunotherapy; microbial signatures as well as taxonomic assignments associated with it were also identified.
+
+***
 # Data description
 
 We used 7 open datasets with the sequencing data from stool samples of the melanoma patients undergoing immunotherapy. Every dataset is named after the first after of the original paper.
@@ -48,7 +62,15 @@ For detailed descriptions please see original papers:
 ***
 
 # Goal of the project
-...
+Confirm the hypothesis of melanoma immunotherapy response status 
+can be predicted from gut microbiomes using machine learning models
+
+# Objectives
+* Build a predictive model based on Random Forest classifier;
+* Validate model with cross-validation;
+* Identify taxonomical as well as functional signatures, which can be used as biomarkers to predict the clinical response status
+
+
 # Methods
 To examine taxonomic and functional features distinguishing people with different immunotherapy response (Rs and NRs), we used Random forest classifier (RFC). Most important features was then analyzed using literature. 
 
