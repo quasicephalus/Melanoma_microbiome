@@ -163,5 +163,9 @@ However, reasonable result was obtained with comparsion of top 70 important MAGs
 ![](pictures/intersect.png)
 
 # Conclusion
-...
+We Identify 29 intestinal microbes, which can be associated with positive immunotherapy response of melanoma patients and can be considered promising candidates for biomarkers of melanoma treatment clinical response status.
+
+Here we demonstrated that Machine Learning approach can be efficiency used for the prediction of immunotherapy response as well as for research purposes. 
+
+However, for clinical use the ML-based predictive approach requires experimental confirmation.
 
