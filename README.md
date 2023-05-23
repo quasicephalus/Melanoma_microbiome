@@ -1,5 +1,6 @@
 # Machine Learning in melanoma research: 
-_prediction of the immunotherapy status of the patients with melanoma using their gut microbiome sequencing data._
+
+зrediction of response to melanoma immunotherapy using gut metagenomic data
 
 **Students:** Tatiana Zyubko, Mikhail Filippov
 
