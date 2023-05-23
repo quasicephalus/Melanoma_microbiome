@@ -1,6 +1,6 @@
 # Machine Learning in melanoma research: 
 
-зrediction of response to melanoma immunotherapy using gut metagenomic data
+prediction of response to melanoma immunotherapy using gut metagenomic data
 
 **Students:** Tatiana Zyubko, Mikhail Filippov
 
